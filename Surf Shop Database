@@ -1,0 +1,19 @@
+--Create a store database
+
+CREATE TABLE Surf_Shop (id INTEGER PRIMARY KEY, Price INTEGER, Shape TEXT, TYPE TEXT, BRAND TEXT);
+
+INSERT INTO Surf_Shop VALUES (1, 200, "Funboard", "Soft-top", "JS Industries");
+INSERT INTO Surf_Shop VALUES (2, 240, "Shortboard", "Wooden", "Firewire");
+INSERT INTO Surf_Shop VALUES (3, 500, "Fish", "Polyurethane", "The Twin Fin Hotel");
+INSERT INTO Surf_Shop VALUES (4, 800, "Longboard", "Epoxy", "Channel Islands");
+INSERT INTO Surf_Shop VALUES (5, 1000, "Longboard", "Wooden", "Torq");
+INSERT INTO Surf_Shop VALUES (6, 750, "Shortboard", "Soft-top", "Aipa");
+INSERT INTO Surf_Shop VALUES (7, 900, "Fish", "Epoxy", "Kechele");
+INSERT INTO Surf_Shop VALUES (8, 1200, "Longboard", "Polyurethane", "Takayama");
+INSERT INTO Surf_Shop VALUES (9, 350, "Funboard", "Soft-top", "Walden");
+INSERT INTO Surf_Shop VALUES (10, 450, "Shortboard", "Wooden", "Wavestorm");
+
+--Display the database ordered by price.
+SELECT * FROM Surf_Shop
+ORDER BY Price desc;
+
