@@ -50,3 +50,11 @@ ON FEB.ORDERID = CUST.ORDER_ID
 WHERE Feb.Quantity > 2
 AND length(orderid) = 6
 AND orderid <> 'Order ID'
+
+/*#8. Which product brought in the most revenue in January and how much revenue did it bring in total?*/
+SELECT PRODUCT, SUM(QUANTITY*PRICE) AS REVENUE
+FROM JANSALES
+GROUP BY PRODUCT
+ORDER BY REVENUE DESC
+LIMIT 1
+
